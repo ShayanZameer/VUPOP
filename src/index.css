@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-section::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.main-section::-webkit-scrollbar-track {
+  background: #e0e0e0;
+
+  border-radius: 8px;
+
+}
+
+.main-section::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff8c00 0%, #ff6347 100%);
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease-in-out;
+
+}
+
+.main-section::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6347 0%, #ff4500 100%);
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+
+  transform: scale(1.1);
+
+}
+
+
+
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

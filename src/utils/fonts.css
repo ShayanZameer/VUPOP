@@ -1,0 +1,7 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'Norwester';
+  src: url('./fonts/norwester.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
