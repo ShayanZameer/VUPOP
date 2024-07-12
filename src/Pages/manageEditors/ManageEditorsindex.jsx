@@ -16,7 +16,7 @@ const ManageEditorsindex = () => {
           <Searchinput />
         </div>
         <div>
-          <Type icon={CiFilter} text="Type" />
+          <Type icon={CiFilter} text="Status" />
         </div>
       </div>
 

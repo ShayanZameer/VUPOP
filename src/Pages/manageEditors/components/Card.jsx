@@ -3,10 +3,8 @@ import { Manageeditors } from "../../../utils/Arrays/Manageeditorarrat";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
-
 const Card = () => {
   const [editDuration, setEditDuration] = useState({});
-
   const toggleEditDuration = (index) => {
     setEditDuration((prev) => ({
       ...prev,
@@ -105,7 +103,9 @@ const Card = () => {
 
                 <div className="flex justify-center mt-6">
                   <button
-                    onClick={toggleEditDuration}
+                    onClick={() => {
+                      toggleEditDuration(index);
+                    }}
                     className="text-secandary font-leagueSpartan font-normal tetx-base cursor-pointer"
                   >
                     Remove Editor

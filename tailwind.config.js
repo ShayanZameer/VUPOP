@@ -13,6 +13,7 @@ export default {
         secandary: '#F8FD24',
         tertiary: "#9A9A9A",
         quaternary: '#333333',
+        quinary:"#313136"
       },
       fontFamily: {
         leagueSpartan: ['"League Spartan"', 'sans-serif'],
@@ -23,7 +24,6 @@ export default {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(90deg, rgba(186, 177, 2, 0) 0%, rgba(255, 245, 40, 0.5) 100%)',
       },
-
       screens: {
         xm: "350px",
         xmm: "430px",
