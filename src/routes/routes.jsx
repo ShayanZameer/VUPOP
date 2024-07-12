@@ -5,6 +5,7 @@ import Overviewindex from "../Pages/overview/Overviewindex";
 import Exportindex from "../Pages/exportSetting/Exportindex";
 import Paymentindex from "../Pages/Payment/Paymentindex";
 import Marketingassets from "../Pages/marketingAssets/Marketingassets";
+import Settingsindex from "../Pages/Settings/Settingsindex";
 
 import ManageEditorsindex from "../Pages/manageEditors/ManageEditorsindex";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "Marketingassets",
         element: <Marketingassets />,
+      },
+      {
+        path: "Settings",
+        element: <Settingsindex />,
       },
     ],
   },
