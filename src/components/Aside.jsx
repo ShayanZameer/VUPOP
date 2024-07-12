@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Asidedetails from "./Asidedetails";
 import images from "../utils/Imagess";
-
+import { SectionContext } from "../context/SectionCon.jsx";
 const Aside = () => {
   const [activeItem, setActiveItem] = useState(null);
 
   const [hoveredItem, setHoveredItem] = useState(null);
+  const { setCurrentSection } = useContext(SectionContext);
 
   useEffect(() => {
     const storedActiveItem = localStorage.getItem("activeItem");
@@ -23,6 +24,7 @@ const Aside = () => {
   const handleClick = (id) => {
     setActiveItem(id);
     localStorage.setItem("activeItem", id);
+    setCurrentSection(array[id].ptext);
   };
 
   const toggleAsideVisibility = () => {
@@ -60,7 +62,7 @@ const Aside = () => {
               isActive={activeItem === index.toString()}
               onHover={() => handleMouseEnter(index.toString())}
               onLeave={handleMouseLeave}
-              onClick={() => handleClick(index.toString())}
+              onClick={() => handleClick(index.toString(), item.ptext)}
             />
           ))}
         </div>

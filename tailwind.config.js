@@ -11,7 +11,8 @@ export default {
       colors: {
         primary: "#1B1B1C",
         secandary: '#F8FD24',
-        tertiary: "#9A9A9A"
+        tertiary: "#9A9A9A",
+        quaternary: '#333333',
       },
       fontFamily: {
         leagueSpartan: ['"League Spartan"', 'sans-serif'],

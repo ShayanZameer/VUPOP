@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import images from "../utils/Imagess";
 
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 import Custombutton from "./Custombutton";
+import { SectionContext } from "../context/SectionCon.jsx";
 
 const Navbar = () => {
+  const { currentSection } = useContext(SectionContext);
   return (
     <div className="bg-primary flex fixed z-10 w-full ">
       <div className="p-3 flex-1 ">
@@ -15,7 +17,7 @@ const Navbar = () => {
 
       <div className="flex-[3] flex items-center px-10 ">
         <p className="font-Norwester font-medium text-white  text-2xl">
-          OVERVIEW
+          {currentSection}
         </p>
       </div>
 
