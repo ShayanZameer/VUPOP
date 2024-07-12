@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 const Exportindex = () => {
-  const [selectedFormat, setSelectedFormat] = useState("");
-  const [codecselectedFormat, setCodecSelectedFormat] = useState("");
+  const [selectedFormat, setSelectedFormat] = useState("Mp4");
+  const [codecselectedFormat, setCodecSelectedFormat] = useState("H.264");
 
   return (
     <div className="bg-black p-4 h-screen">
