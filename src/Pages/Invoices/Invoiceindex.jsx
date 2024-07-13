@@ -13,7 +13,7 @@ const Invoiceindex = () => {
     console.log("button is pressed ");
   };
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white  ">
       <div className="p-4 flex space-x-5">
         <div className=" ">
           <Card
@@ -38,7 +38,7 @@ const Invoiceindex = () => {
         <p className="font-Norwester text-xl font-medium">Invoice Details</p>
       </div>
 
-      <div className="flex justify-between px-4">
+      <div className="flex justify-between  ">
         <div className="pb-2 flex space-x-2">
           <Searchinput />
 
@@ -47,7 +47,7 @@ const Invoiceindex = () => {
           <Type icon={CiFilter} text="Type" />
           <Type icon={CiFilter} text="Type" />
         </div>
-        <div className="pr-2">
+        <div className="">
           <Custombutton
             text="Download all"
             bgColor="secandary"
@@ -56,7 +56,7 @@ const Invoiceindex = () => {
         </div>
       </div>
 
-      <div className="flex py-4 overflow-auto bg-primary rounded-t-md   ">
+      <div className="flex py-4  overflow-auto bg-primary rounded-t-md    ">
         <div className="flex-1 px-4">
           <IncrementDecrement initialText="Invoice ID" initialValue={0} />
         </div>
@@ -80,9 +80,11 @@ const Invoiceindex = () => {
         </div>
       </div>
 
-      <div className="bg-primary">
-        <Table />{" "}
+      <div className="bg-primary overflow-auto h-96 main-section ">
+        <Table />
       </div>
+
+      <div className=" text-white">hello world</div>
     </div>
   );
 };
