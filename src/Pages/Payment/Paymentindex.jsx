@@ -49,10 +49,21 @@ const Paymentindex = () => {
           label="Bank account number"
           inputType="text"
           placeholder=""
+          width="45%"
         />
-        <Inputfield label="Sort Code" inputType="text" placeholder="xx-xx-xx" />
+        <Inputfield
+          label="Sort Code"
+          inputType="text"
+          placeholder="xx-xx-xx"
+          width="45%"
+        />
 
-        <Inputfield label="Bank Name" inputType="text" placeholder="" />
+        <Inputfield
+          label="Bank Name"
+          inputType="text"
+          placeholder=""
+          width="45%"
+        />
       </div>
 
       <div className="text-white font-leagueSpartan font-normal text-base">
