@@ -6,6 +6,7 @@ import Exportindex from "../Pages/exportSetting/Exportindex";
 import Paymentindex from "../Pages/Payment/Paymentindex";
 import Marketingassets from "../Pages/marketingAssets/Marketingassets";
 import Settingsindex from "../Pages/Settings/Settingsindex";
+import Invoiceindex from "../Pages/Invoices/Invoiceindex";
 
 import ManageEditorsindex from "../Pages/manageEditors/ManageEditorsindex";
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "Settings",
         element: <Settingsindex />,
+      },
+      {
+        path: "Invoices",
+        element: <Invoiceindex />,
       },
     ],
   },
